@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>encrypt</title>
+    <meta name="author" content="Andrei Catalin Coman">
+    <meta name="description" content="simple text encryption">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b5ae9d744a.js"></script>
+</head>
+
+<body>
+    <!-- START NAVBAR SECTION -->
+    <section id="navbar-section">
+        <nav class="navbar navbar-default navbar-fixed-top pixelFont">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand">
+                        <span class="encryptLogo"><span class="encryptLogoFirst">en</span><span class="encryptLogoSecond">crypt</span></span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="theNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="en-sha1-link" href="#en-sha1">enSHA-1</a></li>
+                        <li><a id="en-aes-link" href="#en-aes">enAES</a></li>
+                        <li><a id="de-aes-link" href="#de-aes">deAES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- END NAVBAR SECTION -->
+
+    <!-- START ALERT SECTION -->
+    <section id="alert-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="alert-wrap">
+                        <div class="alert alert-danger">
+                            <strong>Ops!</strong> <span class="message"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ALERT SECTION -->
+
+    <!-- START SHA-1 SECTION -->
+    <section id="sha1-section">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center pixelFont">SHA-1 encryption</h3>
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="sha1-text" class="text-center input-label pixelFont">Put your text here</label>
+                        <textarea id="sha1-text" type="text" class="form-control" placeholder="Type something here..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SHA-1 SECTION -->
+    
+    <!-- START AES SECTION -->
+    <section id="aes-section" data-mode="">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center pixelFont">AES <span id="aes-mode">encryption</span></h3>
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="aes-text" class="text-center input-label pixelFont">Put your text here</label>
+                        <textarea id="aes-text" type="text" class="form-control" placeholder="Type something here..."></textarea>
+                        <label for="aes-passphrase" class="text-center input-label pixelFont">Put your passphrase here</label>
+                        <textarea id="aes-passphrase" type="text" class="form-control" placeholder="Type something here..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END AES SECTION -->
+    
+    <!-- START RESULT SECTION -->
+    <section id="result-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="text-center pixelFont">Result <span data-toggle="tooltip" title="Copy to clipboard" class="copy-clipboard"><i class="fa fa-clipboard" aria-hidden="true"></i></span></p>
+                    <p class="text-center result-value"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END RESULT SECTION -->
+
+    <!-- START PRELOADER SECTION -->
+    <div class="preloader"></div>
+    <!-- END PRELOADER SECTION -->
+
+    <!-- START SCRIPT SECTION -->
+    <section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </section>
+    <!-- END SCRIPT SECTION -->
+</body>
+
+</html>

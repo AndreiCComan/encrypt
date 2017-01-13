@@ -1,0 +1,120 @@
+/* COMMON PROPERTIES SECTION  */
+.pixelFont {
+    font-family: 'Press Start 2P', cursive !important;
+}
+
+.input-label {
+    display: block;
+}
+
+.alert-wrap{
+    display: none;
+}
+
+#result-section {
+    display: none;
+}
+
+.result-value{
+    font-size: 30px;
+    overflow-wrap: break-word;
+}
+
+label{
+    margin-top: 10px;
+}
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/preloader.gif) center no-repeat #fff;
+}
+
+.copy-clipboard{
+    font-size: 20px;
+}
+
+/* NAVBAR SECTION PROPERTIES */
+
+#navbar-section {
+    margin-bottom: 5% !important;
+}
+
+.navbar {
+    background: white;
+    border: none;
+    color: #7f8c8d;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #000 !important;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent !important;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+.encryptLogo > .encryptLogoFirst{
+    color: #bdc3c7;
+}
+.encryptLogo > .encryptLogoSecond {
+    color: #2c3e50;
+}
+
+/* SHA1 SECTION PROPERTIES */
+
+/* AES SECTION PROPERTIES */
+#aes-section{
+    display: none;
+}
+
+/** MOBILE AND TABLET PROPERTIES **/
+
+/* Portrait smartphone */
+@media (max-width: 500px) {
+    #navbar-section {
+        margin-bottom: 20% !important;
+    }
+}
+
+
+/* Landscape smartphone */
+@media (max-width: 650px) and (orientation: landscape) {
+    #navbar-section {
+        margin-bottom: 20% !important;
+    }
+}

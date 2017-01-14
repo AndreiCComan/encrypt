@@ -31,9 +31,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="theNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a id="en-sha1-link" href="#en-sha1">enSHA-1</a></li>
-                        <li><a id="en-aes-link" href="#en-aes">enAES</a></li>
-                        <li><a id="de-aes-link" href="#de-aes">deAES</a></li>
+                        <li class="link-active" id="en-sha1-link"><a href="#en-sha1">enSHA-1</a></li>
+                        <li class="link" id="en-aes-link"><a href="#en-aes">enAES</a></li>
+                        <li class="link" id="de-aes-link"><a href="#de-aes">deAES</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <div class="alert-wrap">
+                    <div class="alert-wrap text-center">
                         <div class="alert alert-danger">
                             <strong>Ops!</strong> <span class="message"></span>
                         </div>
@@ -61,7 +61,7 @@
     <section id="sha1-section">
         <div class="container">
             <div class="row">
-                <h3 class="text-center pixelFont">SHA-1 encryption</h3>
+                <h3 class="text-center pixelFont">SHA-1 <span id="sha1-mode">en</span>cryption</h3>
                 <div class="col-md-10 col-md-offset-1">
                     <div class="form-group">
                         <label for="sha1-text" class="text-center input-label pixelFont">Put your text here</label>
@@ -72,12 +72,12 @@
         </div>
     </section>
     <!-- END SHA-1 SECTION -->
-    
+
     <!-- START AES SECTION -->
     <section id="aes-section" data-mode="">
         <div class="container">
             <div class="row">
-                <h3 class="text-center pixelFont">AES <span id="aes-mode">encryption</span></h3>
+                <h3 class="text-center pixelFont">AES <span id="aes-mode">en</span>cryption</h3>
                 <div class="col-md-10 col-md-offset-1">
                     <div class="form-group">
                         <label for="aes-text" class="text-center input-label pixelFont">Put your text here</label>
@@ -90,7 +90,7 @@
         </div>
     </section>
     <!-- END AES SECTION -->
-    
+
     <!-- START RESULT SECTION -->
     <section id="result-section">
         <div class="container">
@@ -103,6 +103,20 @@
         </div>
     </section>
     <!-- END RESULT SECTION -->
+    
+    <!-- START LOADING SPINNER SECTION -->
+    <section id="loading-spinner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="text-center pixelFont">
+                        <span><i class="spinner fa fa-circle-o-notch fa-spin fa-fw"></i> working...</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- END LOADING SPINNER SECTION -->
 
     <!-- START PRELOADER SECTION -->
     <div class="preloader"></div>

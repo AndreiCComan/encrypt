@@ -23,6 +23,7 @@
 label{
     margin-top: 10px;
 }
+
 .preloader {
     position: fixed;
     left: 0px;
@@ -37,6 +38,23 @@ label{
     font-size: 20px;
 }
 
+#loading-spinner-section{
+    display: none;
+}
+
+.spinner{
+    font-size: 20px !important;
+}
+
+#sha1-mode, #aes-mode{
+    background-color: black;
+    padding: 3px;
+    color: white;
+}
+
+.link-active{
+    border-bottom: 5px solid black;
+}
 /* NAVBAR SECTION PROPERTIES */
 
 #navbar-section {
@@ -86,6 +104,21 @@ label{
 .navbar-toggle.active .icon-bar:nth-of-type(3) {
     top: -6px;
     transform: rotate(-45deg);
+}
+
+.navbar{
+    transition: all 0.2s ease-in-out;
+}
+.navbar.scrolled {
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-collapse.collapse.in {
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .encryptLogo > .encryptLogoFirst{

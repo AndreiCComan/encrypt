@@ -9,5 +9,6 @@
 ### encryptions supported
 * SHA-1
 * AES
+
 ### decryptions supported
 * AES

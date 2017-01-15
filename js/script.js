@@ -70,6 +70,7 @@ $(document).ready(function () {
     //Hide navbar on link clicked
     $('.navbar a').on('click', function (event) {
         $("#theNavbar").collapse("hide");
+        $('button[data-target="#theNavbar"]').removeClass("active");
     });
 
 });
